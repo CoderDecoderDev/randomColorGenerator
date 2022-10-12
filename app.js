@@ -11,9 +11,9 @@ const makeRandomColor = () => {
     const r = Math.floor(Math.random() * 256);
     const g = Math.floor(Math.random() * 256);
     const b = Math.floor(Math.random() * 256);
-    if (r + g + b <= 120) {
+    if (r + g + b <= 300) {
         document.body.style.color = "yellow"
-    }
+    } else document.body.style.color = "black"
     return `rgb(${r}, ${g}, ${b})`
 }
 
